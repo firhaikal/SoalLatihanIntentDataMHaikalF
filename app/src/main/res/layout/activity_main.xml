@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_hitam"
+        android:padding="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:src="@drawable/menu_gomart"
+            android:id="@+id/btngomart"/>
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:src="@drawable/menu_goride"
+            android:id="@+id/btngoride"
+            android:layout_toRightOf="@id/btngomart"/>
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:src="@drawable/menu_gofood"
+            android:id="@+id/btngofood"
+            android:layout_below="@id/btngomart"/>
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:src="@drawable/menu_gosend"
+            android:layout_below="@id/btngoride"
+            android:id="@+id/btngosend"
+            android:layout_toRightOf="@id/btngofood"/>
+    </RelativeLayout>
+
+</LinearLayout>
